@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #03132c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+  
+.stopwatch-container {
+  background-color: #061740;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(54, 3, 3, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  color: #a4e2f7;
+  margin-bottom: 20px;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+svg {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+}
+
+circle:first-child {
+  stroke: #6acbf5;
+}
+
+#progress {
+  stroke: #032739;
+  stroke-dasharray: 565.48;
+  stroke-dashoffset: 565.48;
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+#time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  color: #6acdee;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #07992e;
+  color: #dce2ec;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #8b9ab8;
+}
+
+.blue-btn {
+  background-color: #032348;
+  color: white;
+}
+ #laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#laps li {
+  color: #a7c2ed; /* <-- Change this to any color you want */
+  padding: 5px 0;
+  font-size: 1.2em;
+}
